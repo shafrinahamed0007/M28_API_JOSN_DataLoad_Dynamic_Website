@@ -3,3 +3,29 @@ const loadData = () => {
     .then((res) => res.json())
     .then((data) => console.log(data));
 };
+
+const loadComment = () => {
+  fetch("https://jsonplaceholder.typicode.com/posts/1/comments")
+    .then((res) => res.json())
+    .then((comments) => console.log(comments));
+};
+
+const allUsers = () => {
+  fetch("https://jsonplaceholder.typicode.com/users")
+    .then((response) => response.json())
+    .then((allUsers) => console.log(allUsers));
+};
+
+const loadPost = () => {
+    const url = 'https://jsonplaceholder.typicode.com/posts';
+    fetch(url)
+    .then(res => res.json())
+    .then(post =>displayPost(post))
+};
+
+const displayPost = (posts) =>{
+    posts.forEach((post)=>{
+        console.log(post)
+    })
+
+}
