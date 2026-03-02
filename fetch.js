@@ -16,16 +16,4 @@ const allUsers = () => {
     .then((allUsers) => console.log(allUsers));
 };
 
-const loadPost = () => {
-    const url = 'https://jsonplaceholder.typicode.com/posts';
-    fetch(url)
-    .then(res => res.json())
-    .then(post =>displayPost(post))
-};
 
-const displayPost = (posts) =>{
-    posts.forEach((post)=>{
-        console.log(post)
-    })
-
-}
