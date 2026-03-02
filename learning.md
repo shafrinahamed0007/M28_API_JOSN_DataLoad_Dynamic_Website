@@ -1,0 +1,11 @@
+### Learning
+- How Internet work
+- HTTP, HTTPS
+- DNS
+- IP, IPV4, IPV6
+- API
+- JSON
+- Fetch
+- Conditioal Rendering
+- Networking Debugger
+-Async Await
