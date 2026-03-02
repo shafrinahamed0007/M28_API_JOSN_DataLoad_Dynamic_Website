@@ -1,4 +1,4 @@
-#postContainer, #commentsContainer, #todoContainer {
+#postContainer, #commentsContainer, #todoContainer, #usersContainer {
     max-width: 1160px;
     margin: 50px auto;
     display: grid;
@@ -8,7 +8,7 @@
 
 }
 
-.postCard, .commentCard, .todoCard {
+.postCard, .commentCard, .todoCard, .userCard {
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 10px;
