@@ -7,23 +7,30 @@
     <title>Document</title>
 
     <!-- Style CSS -->
-     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
     <button onclick="loadData()">Load Data</button>
-    <button onclick="loadComment()">Comments</button>
+    <button id="allComments" onclick="loadComment()">Comments</button>
     <button onclick="allUsers()">All Users</button>
-    <button onclick="loadPost()">All Posts</button>
+    <button id="allPost" onclick="loadPost()">All Posts</button>
+    <button onclick="todoLoad()">Todo List</button>
 
     <div id="postContainer">
-        
+
 
     </div>
+
+    
+
+
 
 
     <script src="./fetch.js"></script>
     <script src="./posts.js"></script>
+    <script src="./comments.js"></script>
+
 </body>
 
 </html>

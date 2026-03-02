@@ -32,6 +32,13 @@
 // };
 
 const loadPost = () => {
+  const allPostDisply = document.getElementById("allPost");
+  const allCommentDisplay = document.getElementById("allComments");
+  allPostDisply.classList.remove("hide");
+  if (allCommentDisplay) {
+    allCommentDisplay.classList.add("hide");
+  }
+
   const url = "https://jsonplaceholder.typicode.com/posts";
   fetch(url)
     .then((res) => res.json())
